@@ -1,0 +1,51 @@
+name: dashflow_launcher
+description: "DashFlow Launcher — CarPlay-style Android Launcher for low-RAM head units."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management — lightweight, zero codegen
+  provider: ^6.1.2
+
+  # Persistence
+  shared_preferences: ^2.3.2
+
+  # Efficient in-memory LRU cache for decoded app icons
+  collection: ^1.19.1
+
+  # Live map — OpenGL-rendered, no API key, OSM tiles
+  maplibre_gl: ^0.26.1
+
+  # GPS location stream
+  geolocator: ^14.0.2
+
+  # HTTP for Nominatim geocoding + OSRM routing
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#0A0A0A"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/backgrounds/1.jpg
+    - assets/backgrounds/2.jpg
+    - assets/backgrounds/3.jpg
+    - assets/backgrounds/4.jpg
+    - assets/backgrounds/5.jpg
+    - assets/backgrounds/7.jpg
